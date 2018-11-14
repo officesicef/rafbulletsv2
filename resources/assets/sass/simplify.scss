@@ -1,0 +1,379 @@
+/**
+*
+*  Simplify Admin
+*  v1.0
+*  Created by geekman.site
+*
+*  Last Modified: 31 December 2017
+*  See Manual for Full Changelog
+*
+*/
+
+/*
+* Simplify Admin Modifies and extends Bootstrap.
+*/
+
+
+
+/****** Table Of Content *******
+*. Functions
+*. Variables
+*. Mixins
+*. Bootstrap Print Styles
+*. Bootstrap Reboot
+*. Images
+*. Code
+*. Grid
+*. Tables
+*. Forms and Custom Forms
+*. Input Group
+*. Buttons
+*. Button Group
+*. Transitions
+*. Dropdown
+*. Navigation and Tabs
+*. Navbar
+*. Card
+*. Breadcrumbs
+*. Pagination
+*. Badges
+*. Jumbotron
+*. Alert
+*. Progress
+*. Media
+*. List-group
+*. Close
+*. Modal
+*. Tooltip
+*. Popover
+*. Carousel
+*. Utilities
+*. Icons
+*. Layout
+*. Sidebar
+*. Topbar
+*. Timeline
+
+/*Tanos font*/
+@import url('https://fonts.googleapis.com/css?family=Tinos');
+
+/* Bootstrap Functions */
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "functions";
+
+/* Variables */
+@import "variables";
+@import "../../../node_modules/bootstrap/scss/variables";
+
+
+/* Mixins */
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "mixins/mixins";
+
+/* Bootstrap Root Styling and Variables */
+@import "../../../node_modules/bootstrap/scss/root";
+@import "root";
+
+/* Bootstrap Print Styling */
+@import "../../../node_modules/bootstrap/scss/print";
+
+/* Bootstrap Reboot */
+@import "../../../node_modules/bootstrap/scss/reboot";
+
+/* Typography */
+@import "../../../node_modules/bootstrap/scss/type";
+@import "typography";
+
+/* Images */
+@import "../../../node_modules/bootstrap/scss/images";
+
+/* Code */
+@import "../../../node_modules/bootstrap/scss/code";
+
+/* Bootstrap Grid */
+@import "../../../node_modules/bootstrap/scss/grid";
+
+/* Tables */
+@import "../../../node_modules/bootstrap/scss/tables";
+@import "tables";
+
+/* Forms */
+@import "../../../node_modules/bootstrap/scss/forms";
+@import "../../../node_modules/bootstrap/scss/custom-forms";
+@import "forms";
+
+
+/* Input Group */
+@import "../../../node_modules/bootstrap/scss/input-group";
+
+/* Buttons */
+@import "../../../node_modules/bootstrap/scss/buttons";
+@import "buttons";
+
+/* Button Group */
+@import "../../../node_modules/bootstrap/scss/button-group";
+
+
+/* Transitions */
+@import "../../../node_modules/bootstrap/scss/transitions";
+
+/* Dropdown */
+@import "../../../node_modules/bootstrap/scss/dropdown";
+@import "dropdown";
+
+/* Navigation and Tabs */
+@import "../../../node_modules/bootstrap/scss/nav";
+@import "nav";
+
+/* Navbar */
+@import "../../../node_modules/bootstrap/scss/navbar";
+
+/* Cards */
+@import "../../../node_modules/bootstrap/scss/card";
+@import "cards";
+
+/* Breadcrumbs */
+@import "../../../node_modules/bootstrap/scss/breadcrumb";
+
+/* Pagination */
+@import "../../../node_modules/bootstrap/scss/pagination";
+@import "pagination";
+
+/* Badge */
+@import "../../../node_modules/bootstrap/scss/badge";
+
+/* Jumbotron */
+@import "../../../node_modules/bootstrap/scss/jumbotron";
+
+/* Alert */
+@import "../../../node_modules/bootstrap/scss/alert";
+
+/* Progress */
+@import "../../../node_modules/bootstrap/scss/progress";
+@import "progress";
+
+/* Media */
+@import "../../../node_modules/bootstrap/scss/media";
+@import "media";
+
+/* List Group */
+@import "../../../node_modules/bootstrap/scss/list-group";
+@import "lists";
+
+/* Close Button */
+@import "../../../node_modules/bootstrap/scss/close";
+
+/* Modal */
+@import "../../../node_modules/bootstrap/scss/modal";
+
+/* Tooltip */
+@import "../../../node_modules/bootstrap/scss/tooltip";
+.tooltip {
+  font-size: 0.85rem !important;
+}
+
+/* Popover */
+@import "../../../node_modules/bootstrap/scss/popover";
+
+/* Carousel */
+@import "../../../node_modules/bootstrap/scss/carousel";
+@import "carousel";
+
+/* Utilites */
+@import "../../../node_modules/bootstrap/scss/utilities";
+@import "utilities";
+
+/* Icons */
+@import "icons/icons";
+
+/* Layout */
+@import "layout";
+
+/* Sidebar */
+@import "sidebar";
+
+/* Topbar */
+@import "topbar";
+
+/* Timeline Component */
+//@import "timeline";   //Does not need
+
+/* Charts */
+@import "charts";
+
+/* Calendar */
+//@import "calendar";   //Does not need
+
+/* Email */
+//@import "pages/email";   //Does not need
+//@import "pages/website";   //Does not need
+
+*{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+input{
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
+}
+
+.x-navbar{
+  box-shadow:none;
+  border-radius:0px;
+  border-bottom: 0px;
+}
+
+.login-section{
+  padding-bottom:5%;
+  min-height:75vh;
+}
+
+
+@media (max-width: 767px) {
+  body {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+}
+
+//INTRO THEME
+.introjs-tooltip {
+  background-color: rgba(256, 256, 256, 1);
+  color: #000;
+}
+
+.introjs-button,
+.introjs-button:hover, .introjs-button:focus, .introjs-button:active,
+.introjs-disabled, .introjs-disabled:focus, .introjs-disabled:hover {
+  outline: none;
+  background-image: none;
+  background-color: transparent;
+  color: #000;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  box-shadow: none;
+  border-shadow: none;
+  text-shadow: none;
+}
+
+.introjs-button:hover, .introjs-button:focus, .introjs-button:active {
+  border: 1px solid #000
+}
+.introjs-disabled, .introjs-disabled:focus, .introjs-disabled:hover {
+  color: #ccc;
+  border: 1px solid transparent;
+}
+
+.introjs-arrow {
+  border: 10px solid #000;
+}
+.introjs-arrow.top, .introjs-arrow.top-middle, .introjs-arrow.top-right {
+  border-color: transparent transparent rgba(256, 256, 256, 1);
+  top: -20px;
+  left: 20px;
+}
+.introjs-arrow.bottom, .introjs-arrow.bottom-middle, .introjs-arrow.bottom-right {
+  border-color: rgba(256, 256, 256, 1) transparent transparent;
+  bottom: -20px;
+  left: 20px;
+}
+.introjs-arrow.left, .introjs-arrow.right {
+  top: 20px;
+}
+.introjs-arrow.left-bottom, .introjs-arrow.right-bottom {
+  bottom: 20px;
+}
+
+.introjs-arrow.left, .introjs-arrow.left-bottom {
+  left: -20px;
+  border-color: transparent rgba(256, 256, 256, 1) transparent transparent;
+}
+.introjs-arrow.right, .introjs-arrow.right-bottom {
+  right: -20px;
+  border-color: transparent transparent transparent rgba(256, 256, 256, 1);
+}
+
+
+//css za iframe
+
+.iframe-container{
+  position: absolute;
+  z-index:5;
+  background-color:rgba(66,66,66,0.5);
+  height:92vh;
+  width:100%;
+}
+
+.card-dijagnoza{
+  box-shadow:none;
+  border:1px solid #e4e4e4;
+  padding:2%;
+  margin-bottom:10px !important;
+
+  .naslov{
+    font-size:22px;
+  }
+}
+//
+//s-example-basic-multiple{
+//  font-size:40px !important;
+//  height:50px !important;
+//  line-height:2;
+//  li{
+//    font-size:40px !important;
+//  }
+//}
+//
+//body{
+//  color:#fff;
+//  background-color:#253042;
+//}
+//
+//.card{
+//  background-color: #192736 !important;
+//
+//  select{
+//    background-color: #1b2432 !important;
+//    border-color: #4f5467 !important;
+//    color: #ddd !important;
+//  }
+//}
+
+
+.nav-material .nav-item .nav-link.active{
+  //border-bottom:2px solid #273146;
+  background: #508AEB;
+  color:white;
+}
+
+.nav-link.active{
+  //text-shadow: #fff 0 0 12px;
+}
+
+.sidebar-dark{
+  background-color:#273146;
+}
+.sumbit_button{
+  background-color:#508AEB;
+  color:white;
+}
+.sumbit_button:hover{
+  background-color:#307BBB;
+}
+
+.list-nav-icon{
+  background-color:#508AEB;
+}
+.bg-siva{
+  background-color: #efefef;
+}
+
+body{
+  font-family:"Nunito Sans";
+  font-size:1.2em;
+}

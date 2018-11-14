@@ -1,0 +1,242 @@
+.card {
+  -webkit-box-shadow: 0 6px 0 0 rgba(0,0,0,.01), 0 15px 32px 0 rgba(0,0,0,.06);
+  box-shadow: 0 6px 0 0 rgba(0,0,0,.01), 0 15px 32px 0 rgba(0,0,0,.06);
+  border:0px;
+  position: relative;
+
+
+  .card-title{
+    font-size:1.35em;
+    font-weight:400;
+  }
+
+}
+.card-fullscreen {
+   position: fixed;
+   border:none !important;
+   left: 0;
+   top:0;
+   width: 100%;
+   min-height: 100%;
+   z-index: 21;
+   height: 100%;
+   overflow-y: auto !important;
+   .card-footer {
+     position: absolute;
+     bottom:0;
+     width: 100%;
+   }
+   .card-img-top{
+     max-height: 50vh;
+     object-fit: cover;
+   }
+}
+.card-collapsed {
+  .card-body {
+    padding-top: 0;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    height: 0;
+    overflow-y: hidden;
+  }
+}
+.card-body {
+  position: relative;
+  padding: 1.3rem 1.5rem;
+}
+.card-header {
+  position: relative;
+  border: none;
+  background: none;
+  padding: 1.3rem 1.5rem;
+
+  h1,h2,h3,h4,h5 {
+    margin: 0;
+    + p {
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+    }
+  }
+  + .card-body {
+    padding-top: 0;
+    &.card-body-p {
+      padding-top: 1.25rem;
+    }
+  }
+}
+.card.collpased {
+  .card-body {
+
+  }
+}
+.card-actions {
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 1.4rem;
+  top: 1.2rem;
+  @include clearfix();
+  li {
+    display: block;
+    margin:0;
+    padding: 0;
+    float: left;
+    a,button {
+      display: block;
+      width: 1.8rem;
+      background: none;
+      border: none;
+      outline: none;
+      margin:0;
+      padding: 0;
+      height: 1.8rem;
+      line-height: 1.8rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: $secondary;
+      border-radius: 50%;
+      margin-left: 0.3rem;
+      cursor: pointer;
+      &:hover {
+        background: rgba(100,100,100,0.1);
+      }
+    }
+  }
+}
+.card-footer {
+  background: none;
+}
+.card-login{
+  text-align:center;
+  border:5px;
+  border-radius:0px;
+  background-color:#fff;
+  margin-top:10px;
+  font-family:"Tinos", sans-serif;
+  font-size:1.3em;
+  //box-shadow: 0px 10px 30px rgba(43, 43, 43, 0.16);
+  -webkit-box-shadow: 0 6px 0 0 rgba(0,0,0,.02), 0 15px 32px 0 rgba(0,0,0,.06);
+  box-shadow: 0 6px 0 0 rgba(0,0,0,.02), 0 15px 32px 0 rgba(0,0,0,.06);
+  width:30rem;
+  //max-width:100%;
+  color: #1a252a;
+
+  .login-indicator{
+    color:red;
+  }
+  .form-group{
+    text-align:left;
+  }
+  input {
+    outline: 0;
+    border-width: 0px;
+    border-radius:2px;
+    height: calc(2.3125rem + 2px);
+    background-color:#ECF0F1;
+    font-size:1em;
+  }
+  input:focus {
+    background-color:#ECF0F1;
+  }
+  input:active {
+    background-color:#ECF0F1;
+  }
+  select.form-control{
+    outline: 0;
+    border-width: 0px;
+    border-radius:2px;
+    height:50px;
+    background-color:#ECF0F1;
+    font-size:1em;
+  }
+  .main-button{
+    text-transform:uppercase;
+    background-color: #17a2b8;
+    border:0px;
+    font-family:$font-family-sans-serif;
+    font-size:0.9em;
+    position:relative;
+  }
+  .main-button:hover{
+    background-color: #16b2c7;
+    box-shadow: 0px 0px 20px rgba(21, 123, 143, 0.34);
+  }
+  .login-link{
+    font-size:0.95em;
+    color: #0075c7;
+  }
+  .change-password-button{
+    white-space: normal;
+  }
+  .bottom-form-alert{
+    text-align:center;
+  }
+  .top-form-message{
+    font-size:1.2em;
+    font-weight:bold;
+    display:inline-block;
+  }
+  .logo-login {
+    height:50px;
+    display:inline-block;
+    img{
+      width:160px;
+    }
+  }
+  .login-heading{
+    font-size:1.2em;
+    display:inline-block;
+    font-family:$font-family-sans-serif;
+    font-family:"Tinos",sans-serif;
+    font-wegh:bold;
+    color: #1a252a;
+    margin-bottom:0px;
+  }
+  .login-header{
+
+  }
+
+}
+.card-profile{
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.06);
+  border:0px;
+}
+.profile-card-numbers{
+  background-color:#fff;
+
+  h4{
+    font-size:1.6em;
+  }
+}
+.login-arrow-black{
+  position:absolute;
+  left:20px;
+}
+.login-logo-right{
+  position:absolute;
+  right:20px;
+}
+.arrow-back{
+  font-size:30px !important;
+  color: #1a252a;
+
+}
+.arrow-back:hover{
+  color: #223237;
+
+}
+
+//BADGE COLORS
+.bg-badge-blue{
+  background-color:$badge-blue !important;
+}
+.bg-badge-red{
+  background-color:$badge-red !important;
+}
+.bg-badge-green{
+  background-color:$badge-green !important;
+}
+.bg-badge-orange{
+  background-color:$badge-orange !important;
+}

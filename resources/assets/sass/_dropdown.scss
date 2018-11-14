@@ -1,0 +1,11 @@
+.dropdown.no-caret {
+  >.dropdown-toggle {
+    &::after {
+      content: none;
+      display: none;
+    }
+  }
+}
+.dropdown-item.active, .dropdown-item:active {
+  background: inherit !important;
+}
